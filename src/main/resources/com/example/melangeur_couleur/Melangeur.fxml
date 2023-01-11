@@ -8,9 +8,9 @@
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.melangeur_couleur.GUI.MelangeurController">
    <children>
       <Label fx:id="color_result" layoutX="22.0" layoutY="23.0" prefHeight="138.0" prefWidth="556.0" />
-      <Slider fx:id="red_slider" layoutX="22.0" layoutY="240.0" max="255.0" prefHeight="16.0" prefWidth="360.0" />
-      <Slider fx:id="green_slider" layoutX="22.0" layoutY="292.0" max="255.0" prefHeight="16.0" prefWidth="360.0" />
-      <Slider fx:id="blue_slider" layoutX="22.0" layoutY="346.0" max="255.0" prefHeight="16.0" prefWidth="360.0" />
+      <Slider fx:id="red_slider" layoutX="22.0" layoutY="240.0" max="255.0" onMouseDragged="#Slide_Red" prefHeight="16.0" prefWidth="360.0" />
+      <Slider fx:id="green_slider" layoutX="22.0" layoutY="292.0" max="255.0" onMouseDragged="#Slide_Green" onMouseReleased="#Slide_Green" prefHeight="16.0" prefWidth="360.0" />
+      <Slider fx:id="blue_slider" layoutX="22.0" layoutY="346.0" max="255.0" onMouseDragged="#Slide_Blue" onMouseReleased="#Slide_Blue" prefHeight="16.0" prefWidth="360.0" />
       <Label layoutX="398.0" layoutY="230.0" prefHeight="37.0" prefWidth="180.0" style="-fx-background-color: red;" />
       <Label layoutX="398.0" layoutY="282.0" prefHeight="37.0" prefWidth="180.0" style="-fx-background-color: green;" />
       <Label layoutX="398.0" layoutY="336.0" prefHeight="37.0" prefWidth="180.0" style="-fx-background-color: blue;" />
